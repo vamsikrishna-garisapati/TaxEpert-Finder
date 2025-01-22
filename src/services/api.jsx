@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://taxexpert-data.glitch.me';
 
 /**
  * Fetch all Chartered Accountants
@@ -8,7 +8,7 @@ const API_URL = 'http://localhost:5000';
  */
 export const fetchAllAccountants = async () => {
   try {
-    const response = await axios.get(`${API_URL}/accountants`);
+    const response = await axios.get(`${API_URL}/Accountants`);
     return response.data;
   } catch (error) {
     console.error('Error fetching accountants:', error);
@@ -23,7 +23,7 @@ export const fetchAllAccountants = async () => {
  */
 export const searchAccountants = async (query) => {
   try {
-    const response = await axios.get(`${API_URL}/accountants`, {
+    const response = await axios.get(`${API_URL}/Accountants`, {
       params: { q: query },
     });
     return response.data;
@@ -40,7 +40,7 @@ export const searchAccountants = async (query) => {
  */
 export const fetchAccountantDetails = async (id) => {
   try {
-    const response = await axios.get(`${API_URL}/accountants/${id}`);
+    const response = await axios.get(`${API_URL}/Accountants/${id}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching accountant details:', error);

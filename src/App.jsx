@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
 import Services from "./pages/Services";
 import Profile from "./pages/Profile";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (

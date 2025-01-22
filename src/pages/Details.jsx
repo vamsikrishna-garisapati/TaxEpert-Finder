@@ -19,7 +19,7 @@ const Details = () => {
     const fetchAccountantDetails = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/accountants/${id}`);
+        const response = await axios.get(`https://taxexpert-data.glitch.me/accountants/${id}`);
         setAccountant(response.data);
         toast.success("Accountant details loaded successfully!");
       } catch (err) {

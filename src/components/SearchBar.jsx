@@ -15,7 +15,7 @@ const SearchBar = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/accountants");
+        const response = await axios.get("https://taxexpert-data.glitch.me/accountants");
         setAllData(response.data);
       } catch (err) {
         console.error("Error fetching data:", err);
